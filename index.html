@@ -7,11 +7,29 @@
     <link rel="stylesheet" href="lib/bootstrap.min.css">
     <link rel="stylesheet" href="main.css">
 </head>
-<header>
-    <h1>Portal</h1>
-    <img src="https://logodownload.org/wp-content/uploads/2025/01/cs-2-logo.png">
-</header>
 <body>
+<header id="cabecalho">
+    <div class="navbar navbar-expand-md">
+        <div class="container">
+            <h1>Portal </h1>
+            <img src="https://logodownload.org/wp-content/uploads/2025/01/cs-2-logo.png">
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="collapse navbar-collapse" id="menu">
+                <ul class="nav navbar-nav navbar-pills h3">
+                    <li class="nav-item active">
+                        <a class="nav-link active" href="#players">Players</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#times">Times</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+<div data-bs-spy="scroll" data-bs-target="#cabecalho">
     <div class="container">
         <div id="carousel-cs" class="carousel carousel-fade slide" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -33,7 +51,9 @@
                 </button>
             </div>
         </div>
-        <div id="players" class="container">
+
+        <section id="players">
+        <div class="container">
             <h2>TOP 5 - Players <br> <h2 class="h4">(2024)</h2></h2>
             <div class="row">
 
@@ -42,7 +62,7 @@
                         <div class="card-header">
                             <h4 class="card-tittle">#1</h4>
                         </div>
-                        <img src="https://img-cdn.hltv.org/playerbodyshot/hFdoeF_NHLFJClkIlDuUIE.png?ixlib=java-2.1.0&w=400&s=d443bd16021f274f5d092446517f2111">
+                        <img id="foto-player" src="https://img-cdn.hltv.org/playerbodyshot/hFdoeF_NHLFJClkIlDuUIE.png?ixlib=java-2.1.0&w=400&s=d443bd16021f274f5d092446517f2111">
                         <div class="card-body">
                             <h3 class="card-tittle h2" >device</h3>
                             <h5 class="card-subtittle">
@@ -56,7 +76,7 @@
                                     Time Atual: Astralis <br> 
                                     Prize money: $1,965,417<br>
                             </p>
-                            <a class="btn btn-warning" target="_blank" href="https://www.hltv.org/player/7592/device">Conhecer Player</a>
+                            <a id="conhecer" class="btn btn-dark" target="_blank" href="https://www.hltv.org/player/7592/device">Conhecer Player</a>
                         </div>
                     </div>
                 </div>
@@ -66,7 +86,7 @@
                         <div class="card-header">
                             <h4 class="card-tittle">#2</h4>
                         </div>
-                        <img src="https://img-cdn.hltv.org/playerbodyshot/Ixkh35BQq0Gtp3UiQgmx-A.png?ixlib=java-2.1.0&w=400&s=43b014d57d1cfd4a7bda2d77fdcbd37c">
+                        <img id="foto-player" src="https://img-cdn.hltv.org/playerbodyshot/Ixkh35BQq0Gtp3UiQgmx-A.png?ixlib=java-2.1.0&w=400&s=43b014d57d1cfd4a7bda2d77fdcbd37c">
                         <div class="card-body">
                             <h3 class="card-tittle h2">NiKo</h3>
                             <h5 class="card-subtittle">
@@ -80,7 +100,7 @@
                                     Time Atual: Falcons <br> 
                                     Prize money: $1,717,180<br>
                             </p>
-                            <a class="btn btn-warning" target="_blank" href="https://www.hltv.org/player/3741/niko">Conhecer Player</a>
+                            <a id="conhecer" class="btn btn-dark" target="_blank" href="https://www.hltv.org/player/3741/niko">Conhecer Player</a>
                         </div>
                     </div>
                 </div>
@@ -90,7 +110,7 @@
                         <div class="card-header">
                             <h4 class="card-tittle">#3</h4>
                         </div>
-                        <img src="https://img-cdn.hltv.org/playerbodyshot/O2mYq7Td1la8B8xGC-dYr8.png?ixlib=java-2.1.0&w=400&s=a1921e5df7d31e47aadc050ab4c0ff55">
+                        <img id="foto-player" src="https://img-cdn.hltv.org/playerbodyshot/O2mYq7Td1la8B8xGC-dYr8.png?ixlib=java-2.1.0&w=400&s=a1921e5df7d31e47aadc050ab4c0ff55">
                         <div class="card-body">
                             <h3 class="card-tittle h2">s1mple</h3>
                             <h5 class="card-subtittle">
@@ -104,7 +124,7 @@
                                     Time Atual: BC.Game <br> 
                                     Prize money: $1,965,417<br>
                             </p>
-                            <a class="btn btn-warning" target="_blank" href="https://www.hltv.org/player/7998/s1mple">Conhecer Player</a>
+                            <a id="conhecer" class="btn btn-dark" target="_blank" href="https://www.hltv.org/player/7998/s1mple">Conhecer Player</a>
                         </div>
                     </div>
                 </div>
@@ -114,7 +134,7 @@
                         <div class="card-header">
                             <h4 class="card-tittle">#4</h4>
                         </div>
-                        <img src="https://img-cdn.hltv.org/playerbodyshot/bUB9D95e9-m1vmV1uOJkYL.png?ixlib=java-2.1.0&w=400&s=9782ca5ffc91e3142dd8ee5528c88eb6">
+                        <img id="foto-player" src="https://img-cdn.hltv.org/playerbodyshot/bUB9D95e9-m1vmV1uOJkYL.png?ixlib=java-2.1.0&w=400&s=9782ca5ffc91e3142dd8ee5528c88eb6">
                         <div class="card-body">
                             <h3 class="card-tittle h2">dupreeh</h3>
                             <h5 class="card-subtittle">
@@ -128,7 +148,7 @@
                                     Time Atual: Aposentado <br> 
                                     Prize money: $2,041,200<br>
                             </p>
-                            <a class="btn btn-warning" target="_blank" href="https://www.hltv.org/player/7398/dupreeh">Conhecer Player</a>
+                            <a id="conhecer" class="btn btn-dark" target="_blank" href="https://www.hltv.org/player/7398/dupreeh">Conhecer Player</a>
                         </div>
                     </div>
                 </div>
@@ -138,7 +158,7 @@
                         <div class="card-header">
                             <h4 class="card-tittle">#5</h4>
                         </div>
-                        <img src="https://img-cdn.hltv.org/playerbodyshot/lC8JyY0y43QcoKDC41ZeEX.png?ixlib=java-2.1.0&w=400&s=1d505a7641e5358937808e5dbf6ca54c">
+                        <img id="foto-player" src="https://img-cdn.hltv.org/playerbodyshot/lC8JyY0y43QcoKDC41ZeEX.png?ixlib=java-2.1.0&w=400&s=1d505a7641e5358937808e5dbf6ca54c">
                         <div class="card-body">
                             <h3 class="card-tittle h2">ropz</h3>
                             <h5 class="card-subtittle">
@@ -152,14 +172,143 @@
                                     Time Atual: Vitality <br> 
                                     Prize money: $1,704,791<br>
                             </p>
-                            <a class="btn btn-warning" target="_blank" href="https://www.hltv.org/player/11816/ropz">Conhecer Player</a>
+                            <a id="conhecer" class="btn btn-dark" target="_blank" href="https://www.hltv.org/player/11816/ropz">Conhecer Player</a>
                         </div>
                     </div>
                 </div>
 
             </div>
         </div>
+        </section>
+
+        <section id="times">
+            <div class="container">
+                <h2>Times - World Ranking <br> <h2 class="h4">Setembro, 2025</h2></h2>
+                <div class="row">
+
+                    <div class="col-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-tittle">#1</h4>
+                            </div>
+                            <img id="foto-time" src="https://img-cdn.hltv.org/teamlogo/ogcHrcCdzRvxbYvAz04KAN.png?ixlib=java-2.1.0&w=50&s=e1f6019aa9f274ffe45a5e99c88dbc02">
+                            <div class="card-body">
+                                <h3 class="card-tittle h2">Vitality</h3>
+                                <h5 class="card-subtittle">
+                                        <img  src="https://www.hltv.org/img/static/flags/30x20/EU.gif">
+                                        Europa
+                                </h5>
+                                <p class="card-text">
+                                        World ranking: #1 <br>
+                                        Valve ranking: #3<br>
+                                        Idade média: 26.5 <br> 
+                                        Coach: <a class="p-0" href="https://www.hltv.org/coach/9086/xtqzzz">Rémy 'XTQZZZ'</a><br>
+                                </p>
+                                <a id="conhecer" class="btn btn-dark" target="_blank" href="https://www.hltv.org/team/9565/vitality">Conhecer Time</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-tittle">#2</h4>
+                            </div>
+                            <img id="foto-time" src="https://img-cdn.hltv.org/teamlogo/bRk2sh_tSTO6fq1GLhgcal.png?ixlib=java-2.1.0&w=50&s=8b08e53858eb817852ae74b30a30151d">
+                            <div class="card-body">
+                                <h3 class="card-tittle h2">The MongolZ</h3>
+                                <h5 class="card-subtittle">
+                                        <img  src="https://www.hltv.org/img/static/flags/30x20/MN.gif">
+                                        Mongolia
+                                </h5>
+                                <p class="card-text">
+                                        World ranking: #2 <br>
+                                        Valve ranking: #1<br>
+                                        Idade média: 21.0 <br> 
+                                        Coach: <a class="p-0" href="https://www.hltv.org/coach/9243/maaraa">'maaRaa' </a><br>
+                                </p>
+                                <a id="conhecer" class="btn btn-dark" target="_blank" href="https://www.hltv.org/team/6248/the-mongolz">Conhecer Time</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-tittle">#3</h4>
+                            </div>
+                            <img id="foto-time" src="https://img-cdn.hltv.org/teamlogo/syrtYYKR7sBRw3ZHy1YFX7.png?ixlib=java-2.1.0&w=50&s=40e66714687bec05ea422255b1c0099e">
+                            <div class="card-body">
+                                <h3 class="card-tittle h2">Spirit</h3>
+                                <h5 class="card-subtittle">
+                                        <img  src="https://www.hltv.org/img/static/flags/30x20/RU.gif">
+                                        Russia
+                                </h5>
+                                <p class="card-text">
+                                        World ranking: #3 <br>
+                                        Valve ranking: #4<br>
+                                        Idade média: 22.8 <br> 
+                                        Coach: <a class="p-0" href="https://www.hltv.org/coach/2154/hally">Sergey 'hally'</a><br>
+                                </p>
+                                <a id="conhecer" class="btn btn-dark" target="_blank" href="https://www.hltv.org/team/7020/spirit">Conhecer Time</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-tittle">#4</h4>
+                            </div>
+                            <img id="foto-time" src="https://img-cdn.hltv.org/teamlogo/IejtXpquZnE8KqYPB1LNKw.svg?ixlib=java-2.1.0&s=7fd33b8def053fbfd8fdbb58e3bdcd3c">
+                            <div class="card-body">
+                                <h3 class="card-tittle h2">MOUZ</h3>
+                                <h5 class="card-subtittle">
+                                        <img  src="https://www.hltv.org/img/static/flags/30x20/EU.gif">
+                                        Europa
+                                </h5>
+                                <p class="card-text">
+                                        World ranking: #4 <br>
+                                        Valve ranking: #7<br>
+                                        Idade média: 22.4 <br> 
+                                        Coach: <a class="p-0" href="https://www.hltv.org/coach/9295/sycrone">Dennis 'sycrone' </a><br>
+                                </p>
+                                <a id="conhecer" class="btn btn-dark" target="_blank" href="https://www.hltv.org/team/4494/mouz">Conhecer Time</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-tittle">#5</h4>
+                            </div>
+                            <img id="foto-time" src="https://img-cdn.hltv.org/teamlogo/mvNQc4csFGtxXk5guAh8m1.svg?ixlib=java-2.1.0&s=11e5056829ad5d6c06c5961bbe76d20c">
+                            <div class="card-body">
+                                <h3 class="card-tittle h2">Furia</h3>
+                                <h5 class="card-subtittle">
+                                        <img  src="https://www.hltv.org/img/static/flags/30x20/BR.gif">
+                                        Brasil
+                                </h5>
+                                <p class="card-text">
+                                    World ranking: #5 <br>
+                                    Valve ranking: #2<br>
+                                    Idade média: 26.6 <br> 
+                                    Coach: <a class="p-0" href="https://www.hltv.org/coach/24267/sidde">'sidde' Macedo</a><br>
+                                </p>
+                                <a id="conhecer" class="btn btn-dark" target="_blank" href="https://www.hltv.org/player/11816/ropz">Conhecer Time</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
     </div>
+    </div>
+    <footer class="footer">
+        <p>Portal CS2 - Todos os direitos reservados - 2025</p>
+    </footer>
 </body>
 <script src="lib/bootstrap.bundle.min.js"></script>
 </html>
